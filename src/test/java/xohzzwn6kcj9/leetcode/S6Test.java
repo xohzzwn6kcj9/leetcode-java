@@ -11,14 +11,13 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @DisplayName("6. ZigZag Conversion")
 class S6Test {
 
-    S6 subject;
+    private S6 subject;
 
     @BeforeEach
     void setUp() {
         subject = new S6();
     }
 
-    @Test
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10})
     void emptyString(int row) {

@@ -4,15 +4,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DisplayName("7. Reverse Integer")
 class S7Test {
 
-    S7 subject;
+    private S7 subject;
 
     @BeforeEach
     void setUp() {

@@ -6,7 +6,7 @@ public class S6 {
             return s;
         }
         int n = s.length();
-        int numCols = n;
+        @SuppressWarnings("UnnecessaryLocalVariable") int numCols = n;
 
         System.out.println("s.length()=" + s.length() + ", numRows=" + numRows + ", numCols=" + numCols);
 

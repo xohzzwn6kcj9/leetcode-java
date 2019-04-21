@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @DisplayName("8. String to Integer (atoi)")
 class S8Test {
-    S8 subject;
+    private S8 subject;
 
     @BeforeEach
     void setUp() {

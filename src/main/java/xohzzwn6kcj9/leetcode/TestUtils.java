@@ -10,7 +10,7 @@ public class TestUtils {
 
         String[] parts = input.split(",");
         int[] output = new int[parts.length];
-        for(int index = 0; index < parts.length; index++) {
+        for (int index = 0; index < parts.length; index++) {
             String part = parts[index].trim();
             output[index] = Integer.parseInt(part);
         }
@@ -24,7 +24,7 @@ public class TestUtils {
         // Now convert that list into linked list
         ListNode dummyRoot = new ListNode(0);
         ListNode ptr = dummyRoot;
-        for(int item : nodeValues) {
+        for (int item : nodeValues) {
             ptr.next = new ListNode(item);
             ptr = ptr.next;
         }
@@ -33,5 +33,18 @@ public class TestUtils {
 
     public static String booleanToString(boolean input) {
         return input ? "True" : "False";
+    }
+
+    public static String arrayToString(int[] array) {
+        final StringBuilder sb = new StringBuilder("[");
+        for (int i = 0; i < array.length - 1; i++) {
+            sb.append(array[i]).append(", ");
+        }
+
+        if(array.length > 0){
+            sb.append(array[array.length-1]);
+        }
+
+        return sb.append("]").toString();
     }
 }

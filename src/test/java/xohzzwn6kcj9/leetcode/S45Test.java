@@ -44,7 +44,7 @@ class S45Test {
         final int[] nums = TestUtils.stringToIntegerArray("[1,2,3,4,5,6,7,8,9,10,11,12]");
         assertThat(subject.jump(nums)).isEqualTo(4);
     }
-    
+
     @Test
     void increasing2() {
         final int[] nums = TestUtils.stringToIntegerArray("[1,2,3,4,5]");

@@ -32,4 +32,22 @@ class S45Test {
         final int[] nums = TestUtils.stringToIntegerArray("[0]");
         assertThat(subject.jump(nums)).isEqualTo(0);
     }
+
+    @Test
+    void discussion1() {
+        final int[] nums = TestUtils.stringToIntegerArray("[5,1,1,5,1,1,1,1,1]");
+        assertThat(subject.jump(nums)).isEqualTo(2);
+    }
+
+    @Test
+    void increasing1() {
+        final int[] nums = TestUtils.stringToIntegerArray("[1,2,3,4,5,6,7,8,9,10,11,12]");
+        assertThat(subject.jump(nums)).isEqualTo(4);
+    }
+    
+    @Test
+    void increasing2() {
+        final int[] nums = TestUtils.stringToIntegerArray("[1,2,3,4,5]");
+        assertThat(subject.jump(nums)).isEqualTo(3);
+    }
 }

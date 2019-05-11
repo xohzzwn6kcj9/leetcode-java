@@ -16,7 +16,7 @@ public class S51NQueen {
 
         for (int row = 0; row < n; row++) {
             for (int col = 0; col < n; col++) {
-                board[row][col] = 'X';
+                board[row][col] = '.';
             }
         }
 
@@ -30,10 +30,6 @@ public class S51NQueen {
                 answer.add(copyToAnswer(board));
             }
             return;
-        }
-
-        for (int col = 0; col < board.length; col++) {
-            board[currentRow][col] = '.';
         }
 
         for (int col = 0; col < board.length; col++) {
